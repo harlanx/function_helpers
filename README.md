@@ -1,4 +1,5 @@
-A library for Dart developers.
+A helper classes library for Dart.
+Usually for mockups with common data models, random data generators and a few helpful functionalities.
 
 ## Usage
 
@@ -8,12 +9,21 @@ A simple usage example:
 import 'package:function_helpers/function_helpers.dart';
 
 main() {
-  var awesome = new Awesome();
+  var a = 30.0;
+  var x1 = 10.0;
+  var y1 = 100.0;
+  var x2 = 100.0;
+  var y2 = 1000.0;
+
+  var z = MathHelper.valToNewRange(currentValue: a, oldMin: x1, oldMax: y1, newMin: x2, newMax: y2);
+  print(z); */
 }
 ```
 
-## Features and bugs
-
-Please file feature requests and bugs at the [issue tracker][tracker].
-
-[tracker]: http://example.com/issues/replaceme
+## Features
+- Common Models
+- Data Helper
+- Extension Helper
+- Math Helper
+- Random Helper
+- Widget Helper
