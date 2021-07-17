@@ -15,8 +15,8 @@ main() {
   var x2 = 100.0;
   var y2 = 1000.0;
 
-  var z = MathHelper.valToNewRange(currentValue: a, oldMin: x1, oldMax: y1, newMin: x2, newMax: y2);
-  print(z); */
+  var z = a.valToNewRange(oldMin: x1, oldMax: y1, newMin: x2, newMax: y2);
+  print(z);
 }
 ```
 
