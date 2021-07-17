@@ -1,6 +1,14 @@
 A helper classes library for Dart.
 Usually for mockups with common data models, random data generators and a few helpful functionalities.
 
+## Features
+- Common Models
+- Data Helper
+- Extension Helper
+- Math Helper
+- Random Helper
+- Widget Helper
+
 ## Usage
 
 A simple usage example:
@@ -20,10 +28,3 @@ main() {
 }
 ```
 
-## Features
-- Common Models
-- Data Helper
-- Extension Helper
-- Math Helper
-- Random Helper
-- Widget Helper
