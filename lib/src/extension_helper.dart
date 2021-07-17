@@ -14,6 +14,28 @@ extension IterableNumUtil<T extends num> on Iterable<num> {
   num get average => sum / length as T;
 }
 
-extension IterableUtil on Iterable{
+extension IterableUtil on Iterable {
+
+  /// Removes the duplicate of an element that has more than 1 occurence.
   List get removeDuplicate => toSet().toList();
+
+  /// Returns values with more than 1 occurence.
+  List<T> intersection<T>(Iterable<Iterable<T>> iterables) {
+    return iterables.map((e) => e.toSet()).reduce((a, b) => a.intersection(b)).toList();
+  }
+
+  /// Returns the occurence count of an element in a list.
+  int occurence<T>(T item) {
+    var count = where((element) => element == item);
+    return count.length;
+  }
+
+  /// Returns a Map frequency count of each element in a list.
+  /// 
+  /// The elements are used as keys.
+  Map<dynamic, int> frequencies(){
+    var map = <dynamic, int>{};
+    forEach((e) => map.update(e, (x) => (x) + 1, ifAbsent: () => 1));
+    return map;
+  }
 }

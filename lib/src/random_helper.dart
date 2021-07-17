@@ -1,6 +1,8 @@
 import 'dart:math' as math;
 import 'dart:convert' as convert;
 
+import 'package:flutter/material.dart';
+
 class RandomHelper {
   /// Generates a string with characters [aA-zZ] and [0-9]
   static String randString(int length) {
@@ -30,6 +32,16 @@ class RandomHelper {
 
   static bool randBoolean() => math.Random().nextBool();
 
+  /// Generates a DateTime between the minDate and maxDate
+  static DateTime randDateTime(DateTime minDate, DateTime maxDate) {
+    var randYear = minDate.year + math.Random().nextInt((maxDate.year - minDate.year) + 1);
+    var randMonth = minDate.month + math.Random().nextInt((maxDate.month - minDate.month) + 1);
+    var randDay = minDate.day + math.Random().nextInt((maxDate.day - minDate.day) + 1);
+    return DateTime(randYear, randMonth, randDay);
+  }
+
+  static Color randColor = Color((math.Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0);
+
   static String randSingleImage([List<String>? customImages]) {
     final images = [
       'lib/assets/images/sample_image_1.jpg',
@@ -47,7 +59,7 @@ class RandomHelper {
     }
   }
 
-  static List<String> randMultiImage(int count,[List<String>? customImages]) {
+  static List<String> randMultiImage(int count, [List<String>? customImages]) {
     final images = [
       'lib/assets/images/sample_image_1.jpg',
       'lib/assets/images/sample_image_2.jpg',
