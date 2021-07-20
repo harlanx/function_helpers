@@ -5,3 +5,4 @@ export 'src/extension_helper.dart';
 export 'models/models.dart';
 export 'src/random_helper.dart';
 export 'src/widget_helper.dart';
+export 'package:collection/collection.dart';
