@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 
 extension GlobalKeyUtil on GlobalKey {
-  ///Gets the offset and size on the widget relative to the global position.
+  ///Gets the offset and size on the widget relative to the global position (entire screen).
   Rect? get globalPaintBounds {
     final renderObject = currentContext?.findRenderObject()!;
     var translation = renderObject?.getTransformTo(null).getTranslation();
