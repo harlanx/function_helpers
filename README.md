@@ -1,7 +1,7 @@
 A helper classes library for Dart.
 Usually for mockups with common data models, random data generators and a few helpful functionalities.
 
-Note: Use [collection](https://pub.dev/packages/collection) package for methods like forEachIndexed, mapIndexed etc. for additional functionalities of Iterables.
+Note: Use [collection](https://pub.dev/packages/collection) package instead if you only need methods like forEachIndexed, mapIndexed and other functionities for Iterables.
 
 ## Features
 - Common Models
