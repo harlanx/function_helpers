@@ -21,11 +21,11 @@ import 'package:function_helpers/function_helpers.dart';
 main() {
   var a = 30.0;
   var x1 = 10.0;
-  var y1 = 100.0;
   var x2 = 100.0;
+  var y1 = 100.0;
   var y2 = 1000.0;
 
-  var z = a.valToNewRange(oldMin: x1, oldMax: y1, newMin: x2, newMax: y2);
+  var z = a.valToNewRange(oldMin: x1, oldMax: x2, newMin: y1, newMax: y2);
   print(z);
 }
 ```
