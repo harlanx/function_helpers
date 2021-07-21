@@ -26,7 +26,7 @@ main() {
   var y2 = 1000.0;
 
   var z = a.valToNewRange(oldMin: x1, oldMax: x2, newMin: y1, newMax: y2);
-  print(z);
+  print(z); // Prints out 300
 }
 ```
 
