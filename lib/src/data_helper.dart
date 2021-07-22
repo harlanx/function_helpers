@@ -36,13 +36,17 @@ class MockData {
         quantity,
         (index) {
           return Product(
+            id: index,
             name: RandomHelper.randString(10),
             brand: RandomHelper.randString(8),
             price: RandomHelper.randRangeDouble(80, 2000),
             // Optional
             oldPrice: RandomHelper.randRangeDouble(200, 5000),
-            productType: ProductType.values[RandomHelper.randRangeInt(0, ProductType.values.length - 1)],
-            image: RandomHelper.randSingleImage(),
+            discount: RandomHelper.randRangeDouble(1, 100),
+            rating: RandomHelper.randRangeDouble(1, 5),
+            remaining: RandomHelper.randRangeInt(1, 10),
+            sold: RandomHelper.randRangeInt(10, 50),
+            images: RandomHelper.randMultiImage(3),
           );
         },
       );
