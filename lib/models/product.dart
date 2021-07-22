@@ -1,7 +1,7 @@
 class Product {
   int id;
   String name;
-  String brand;
+  String? brand;
   double price;
   double oldPrice;
   double? discount;
@@ -14,7 +14,7 @@ class Product {
   Product({
     required this.id,
     required this.name,
-    required this.brand,
+    this.brand,
     required this.price,
     this.oldPrice = 0.0,
     this.discount,
