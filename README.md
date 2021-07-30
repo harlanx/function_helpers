@@ -1,4 +1,4 @@
-A helper classes library for Dart.
+A helper classes library for Dart and Flutter.
 Usually for mockups with common data models, random data generators and a few helpful functionalities.
 
 Note: Use [collection](https://pub.dev/packages/collection) package instead if you only need methods like forEachIndexed, mapIndexed and other functionities for Iterables.
