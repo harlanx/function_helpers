@@ -36,7 +36,7 @@ collection package sample:
 </br>
 They might introduce a different method solely for int and double.
 </br>
-Track it here: .min/max extension not working on List<int> ([#337]('https://github.com/dart-lang/collection/issues/189'))
+Track it here: .min/max extension not working on List<int> ([#189](https://github.com/dart-lang/collection/issues/189))
 
 ```dart
 import 'package:collection/collection.dart';
