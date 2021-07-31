@@ -9,7 +9,6 @@ Note: Use [collection](https://pub.dev/packages/collection) package instead if y
 - Common Models
 - Data Helper
 - Extension Helper
-- Math Helper
 - Random Helper
 - Widget Helper
 
