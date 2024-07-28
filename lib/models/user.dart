@@ -8,44 +8,30 @@ class User extends Person {
   final String? image;
 
   User({
-    firstName,
-    middleName,
-    lastName,
-    age,
-    gender,
-    address,
-    race,
-    heightInM,
-    weightInKg,
-    eyeColor,
-    hairColor,
-    disabled,
-    salary,
+    required super.firstName,
+    required super.middleName,
+    required super.lastName,
+    required super.age,
+    required super.gender,
+    required super.address,
+    super.race,
+    super.heightInM,
+    super.weightInKg,
+    super.eyeColor,
+    super.hairColor,
+    super.disabled,
+    super.salary,
     required this.userName,
     required this.email,
     required this.password,
     required this.pinCode,
     this.image,
-  }) : super(
-          firstName: firstName,
-          middleName: middleName,
-          lastName: lastName,
-          age: age,
-          gender: gender,
-          address: address,
-          race: race,
-          heightInM: heightInM,
-          weightInKg: weightInKg,
-          eyeColor: eyeColor,
-          hairColor: hairColor,
-          disabled: disabled,
-          salary: salary,
-        );
+  });
 
   static List<String> get emailProviders => [
-    '@hotmail.com',
-    '@yahoo.com',
-    'gmail.com',
-    '@outlook.com',
-  ];
+        '@hotmail.com',
+        '@yahoo.com',
+        'gmail.com',
+        '@outlook.com',
+      ];
 }
